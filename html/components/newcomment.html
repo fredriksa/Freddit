@@ -1,0 +1,9 @@
+<h3>Post A Comment</h3>
+<form method='GET' action='../routes/newcomment.php'>
+  <textarea name='content' placeholder='Content...'></textarea>
+  <br>
+  <input type='hidden' name='referer' value='---$referer---'>
+  <input type='hidden' name='subfreddit' value='---$subfreddit---'>
+  <input type='hidden' name='post_id' value='---$post_id---'>
+  <button type='submit'>Post</button>
+</form>

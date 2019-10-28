@@ -1,0 +1,33 @@
+<html>
+  <body>
+    <img src="../routes/fredditlogo.php">
+    <h2>Freddit's Activity Feed!</h2>
+    <button onclick="location.href='../pages/frontpage.php'" type="button">Return to frontpage</button>
+    <h2>Posts</h2>
+    <table>
+      <tbody>
+        <tr>
+          <td></td>
+          <td>Title</td>
+          <td>Subfreddit</td>
+          <td>Creator</td>
+          <td>Created at</td>
+        </tr>
+        <!--===explodePost===-->
+        <tr>
+          <td>
+            <form style="margin-bottom:0" action="../pages/post.php">
+              <input type="hidden" name="post_id" value="---$post_id---">
+              <button type="submit">Open</button>
+            </form>
+          </td>
+          <td>---$postTitle---</td>
+          <td>---$subfredditName---</td>
+          <td>---$postCreator---</td>
+          <td>---$postCreatedAt---</td>
+        </tr>
+        <!--===explodePost===-->
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+{
+  "modelname" : {
+    "core": {
+      "table": "database table",
+      "primary": "primary key identified below"
+    },
+
+    "attribute": {
+      "column_name": "database_column_name",
+      "type": "raw"
+    },
+    "attribute2": {
+      "column_name": "database_column_name2",
+      "type": "string"
+    } 
+  },
+
+  "post": {
+    "core": {
+      "table": "post",
+      "primary": "id"
+    },
+
+    "id": { 
+      "column_name": "id",
+      "type": "raw"
+    },
+    "title": {
+      "column_name": "title",
+      "type": "string"
+    },
+    "owner": {
+      "column_name": "owner_id",
+      "type": "raw"
+    },
+    "created": {
+      "column_name": "datetime_created",
+      "type": "string"
+    },
+    "subfreddit": {
+      "column_name": "subfreddit_id",
+      "type": "raw"
+    },
+    "content": {
+      "column_name": "content",
+      "type": "string"
+    },
+    "file": {
+      "column_name": "filepath",
+      "type": "string"
+    }
+  },
+
+  "reply": {
+    "core": {
+      "table": "reply",
+      "primary": "id"
+    },
+
+    "id": {
+      "column_name": "id",
+      "type": "raw"
+    },
+    "owner": {
+      "column_name": "owner_id",
+      "type": "raw"
+    },
+    "content": {
+      "column_name": "content",
+      "type": "string"
+    },
+    "created": {
+      "column_name": "datetime_created",
+      "type": "string"
+    }
+  },
+
+  "subfreddit": {
+    "core": {
+      "table": "subfreddit",
+      "primary": "id"
+    }, 
+    "id": {
+      "column_name": "id",
+      "type": "raw"
+    },
+    "name": {
+      "column_name": "name",
+      "type": "string"
+    }
+  },
+
+  "user": {
+    "core": {
+      "table": "user",
+      "primary": "id"
+    },
+
+    "id": {
+      "column_name": "id",
+      "type": "raw"
+    },
+    "username": {
+      "column_name": "username",
+      "type": "string"
+    },
+    "password": {
+      "column_name": "password",
+      "type": "string"
+    },
+    "email": {
+      "column_name": "email",
+      "type": "string"
+    },
+    "emailpassword": {
+      "column_name": "email_password",
+      "type": "string"
+    }
+  },
+
+  "comment": {
+    "core": {
+      "table": "comment",
+      "primary": "id"
+    },
+
+    "id": {
+      "column_name": "id",
+      "type": "raw"
+    },
+    "content": {
+      "column_name": "content",
+      "type": "string"
+    },
+    "owner": {
+      "column_name": "owner_id",
+      "type": "raw"
+    },
+    "post": {
+      "column_name": "post_id",
+      "type": "raw"
+    },
+    "created": {
+      "column_name": "datetime_created",
+      "type": "string"
+    }
+  }
+}

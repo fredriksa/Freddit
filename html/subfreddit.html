@@ -1,0 +1,29 @@
+<html>
+  <body>
+    <img src="../routes/fredditlogo.php">
+    <h2>---$subfredditName---</h2>
+    <button onclick="location.href='../pages/frontpage.php'" type="button">Return to frontpage</button>
+    <br>
+    <h3>Posts</h3>
+    <table>
+      <tbody>
+      ---$tablehead---
+      <!--===explodePost===-->
+        <tr>
+          <td>
+            <form style="margin-bottom:0" action="../pages/post.php">
+                <input type="hidden" name="post_id" value="---$post_id---">
+                <button type="submit">Open</button>
+            </form>
+          </td>
+          <td>---$postTitle---</td>
+          <td>---$postCreator---</td>
+          <td>---$postCreatedAt---</td>
+          <td>
+          ---$removeButton---
+        </tr>
+      <!--===explodePost===-->
+      </tbody>
+    </table>
+  </body>
+</html>

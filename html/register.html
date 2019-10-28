@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <img src="../routes/fredditlogo.php">
+    <h2>Register for Freddit!</h2>
+    <form action='../routes/register.php' method='POST'>
+      <input type='text' placeholder='Username' name='username'>
+      <br>
+      <input type='password' placeholder='Password' name='password'>
+      <br>
+      <input type='email' placeholder='Google Email' name='email'>
+      <br>
+      <input type='password' placeholder='Google Email Password' name='emailpassword'>
+      <br>
+      <input type='hidden' name='referer' value='pages/register.php'>
+      <button type='submit'>Register</button>
+      <button onclick="location.href='../index.php'" type="button">Cancel</button>
+    </form>
+    <p>---$message---</p>
+  </body>
+</html>

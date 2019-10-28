@@ -1,0 +1,25 @@
+<html>
+  <body>
+    <img src="../routes/fredditlogo.php">
+    <h2>Post: ---$postTitle---</h2>
+    <button onclick="location.href='---$href---'" type="button">Return to subfreddit</button>
+    <br>
+    <p>Written by: ---$author--- at ---$createdTime---</p>
+    ---$file_path---
+    <p>---$mainContent---</p>
+    <table>
+      <tbody>
+      ---$tableHead---
+      <!--===explodePost===-->
+        <tr>
+          <td>---$commentCreator---</td>
+          <td>---$commentCreatedAt---</td>
+          <td>---$commentContent---</td>
+          <td>
+          ---$removeButton---
+        </tr>
+      <!--===explodePost===-->
+      </tbody>
+    </table>
+  </body>
+</html>

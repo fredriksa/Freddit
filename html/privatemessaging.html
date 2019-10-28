@@ -1,0 +1,26 @@
+<html>
+  <body>
+    <img src="../routes/fredditlogo.php">
+    <h2>Private Messaging</h2>
+    <button onclick="location.href='../pages/frontpage.php'" type="button">Return to frontpage</button>
+    <br>
+    <h3>Inbox</h3>
+    <!--===explodeEmail===-->
+      <h4>Subject: ---$emailSubject---</h4>
+      <p>From: ---$emailSender---   ---$emailSentAt---</p>
+      <textarea readonly rows="4" cols="50">
+        ---$message---
+      </textarea>
+    <!--===explodeEmail===-->
+    <h3>Send A Message</h3>
+    <form method='GET' action='../routes/sendmessage.php'>
+      <input type='text' name='target' placeholder='Target User'>
+      <br>
+      <input type='text' name='subject' placeholder='Subject'> 
+      <br>
+      <textarea name='content' placeholder='Content...'></textarea>
+      <br>
+      <button type='submit'>Send</button>
+    </form>
+  </body>
+</html>
